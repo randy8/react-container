@@ -18,8 +18,7 @@ Usage
 
 Troubleshooting
 ~~~~~~~~~~~~~~~
-Sometimes improper caching will lead to compilation errors:
-* `docker-compose rm -f && docker-compose up --build -d && docker-compose up`
+Sometimes improper caching will lead to compilation errors that aren't syntactical so a fresh start may be necessary: `docker-compose rm -f && docker-compose up --build -d && docker-compose up`
 
 TODO
 ~~~~
