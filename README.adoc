@@ -1,0 +1,24 @@
+React Container
+---------------
+Proof of concept for containerizing a web app.
+
+Info
+~~~~
+* Framework: React
+* Database: MySQL
+* Hosted on: Nginx
+* Containerized with: Docker
+
+Usage
+~~~~~
+* Run `docker-compose up --build` in the top level of this repository.
+* Site: `http://localhost:8008/`
+* Adminer: `http://localhost:8000/`
+* Login information in docker-compose.yaml
+
+TODO
+~~~~
+* Fix issue where updates to ratings wipes reviews
+* Parse existing Letterboxd reviews and import into db
+* Merge portfolio site
+* Clean up UI
