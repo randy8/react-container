@@ -11,14 +11,20 @@ Info
 
 Usage
 ~~~~~
-* Run `docker-compose up --build` in the top level of this repository.
+* Run `docker-compose up --build` in the top level of this repository
 * Site: `http://localhost:8008/`
-* Adminer: `http://localhost:8000/`
+* Adminer console: `http://localhost:8000/`
 * Login information in docker-compose.yaml
+
+Troubleshooting
+~~~~~~~~~~~~~~~
+Sometimes improper caching will lead to compilation errors:
+* `docker-compose rm -f && docker-compose up --build -d && docker-compose up`
 
 TODO
 ~~~~
-* Fix issue where updates to ratings wipes reviews
+* Fix issue where updates to ratings wipe reviews
 * Parse existing Letterboxd reviews and import into db
+* Replace MySQL with pg
 * Merge portfolio site
 * Clean up UI
